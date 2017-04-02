@@ -16,7 +16,9 @@ source("helper.R")
 # read data frames
 L1= readRDS("L1.rds")
 L2 = readRDS("L2.rds")
-L3= readRDS("L3.rds")
+L3_1 = readRDS("L3_1.rds")
+L3_2 = readRDS("L3_2.rds")
+L3 = rbind(L3_1, L3_2)
 vaccine <- readRDS("vaccine.rds")
 state_list = readRDS("state_list.rds")
 
